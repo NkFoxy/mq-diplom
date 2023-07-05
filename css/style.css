@@ -24,7 +24,7 @@ header {
 
   width: 100%;
   background-size: cover;
-  background-image: url("images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   margin-bottom: 10px;
   padding-bottom: 95px;
 }
@@ -138,7 +138,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("images/trend1.jpg");
+  background-image: url("../images/trend1.jpg");
 }
 
 .article-garden::before {
@@ -197,7 +197,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("images/trend2.jpg");
+  background-image: url("../images/trend2.jpg");
 }
 
 .article-cheese::before {
@@ -214,7 +214,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("images/trend3.jpg");
+  background-image: url("../images/trend3.jpg");
 }
 
 .article-mountains::before {
@@ -231,7 +231,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("images/trend4.jpg");
+  background-image: url("../images/trend4.jpg");
 }
 
 .article-lime::before {
