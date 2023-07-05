@@ -1,6 +1,6 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("/fonts/OpenSans-Regular.woff");
+  src: url("fonts/OpenSans-Regular.woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/fonts/OpenSans-Bold.woff");
+  src: url("fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@ header {
 
   width: 100%;
   background-size: cover;
-  background-image: url("/images/banner-bg.jpg");
+  background-image: url("images/banner-bg.jpg");
   margin-bottom: 10px;
   padding-bottom: 95px;
 }
@@ -138,7 +138,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("/images/trend1.jpg");
+  background-image: url("images/trend1.jpg");
 }
 
 .article-garden::before {
@@ -197,7 +197,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("/images/trend2.jpg");
+  background-image: url("images/trend2.jpg");
 }
 
 .article-cheese::before {
@@ -214,7 +214,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("/images/trend3.jpg");
+  background-image: url("images/trend3.jpg");
 }
 
 .article-mountains::before {
@@ -231,7 +231,7 @@ header::before {
   width: 25%;
   height: 300px;
   position: relative;
-  background-image: url("/images/trend4.jpg");
+  background-image: url("images/trend4.jpg");
 }
 
 .article-lime::before {
@@ -465,7 +465,7 @@ h4 a:hover {
   border: none;
   padding: 24px 24px;
   background-color: #b59f5b;
-  background-image: url("/svg/search.svg");
+  background-image: url("svg/search.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -678,7 +678,7 @@ h4 a:hover {
   -moz-apperance: none;
   appearance: none;
 
-  background-image: url("/svg/form-arrows.svg");
+  background-image: url("svg/form-arrows.svg");
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: right 5px center;
@@ -718,14 +718,14 @@ h4 a:hover {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background-image: url("/svg/form-empty-circle.svg");
+  background-image: url("svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-size: 17px;
 }
 
 /* Checked */
 .form_radio input[type="radio"]:checked + label:before {
-  background-image: url("/svg/form-circle.svg");
+  background-image: url("svg/form-circle.svg");
   background-repeat: np-repeat;
   background-size: 17px;
 }
@@ -899,15 +899,15 @@ h4 a:hover {
 }
 
 .social-link-dribbble {
-  background-image: url("/svg/001-dribbble.svg");
+  background-image: url("svg/001-dribbble.svg");
 }
 
 .social-link-pinterest {
-  background-image: url("/svg/002-pinterest.svg");
+  background-image: url("svg/002-pinterest.svg");
 }
 
 .social-link-twitter {
-  background-image: url("/svg/003-tumblr.svg");
+  background-image: url("svg/003-tumblr.svg");
 }
 
 .social-link-text {
