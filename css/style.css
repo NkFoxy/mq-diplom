@@ -1,6 +1,6 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "OpenSans";
-  src: url("fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -465,7 +465,7 @@ h4 a:hover {
   border: none;
   padding: 24px 24px;
   background-color: #b59f5b;
-  background-image: url("svg/search.svg");
+  background-image: url("../svg/search.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -678,7 +678,7 @@ h4 a:hover {
   -moz-apperance: none;
   appearance: none;
 
-  background-image: url("svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: right 5px center;
@@ -718,14 +718,14 @@ h4 a:hover {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background-image: url("svg/form-empty-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-size: 17px;
 }
 
 /* Checked */
 .form_radio input[type="radio"]:checked + label:before {
-  background-image: url("svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
   background-repeat: np-repeat;
   background-size: 17px;
 }
@@ -899,15 +899,15 @@ h4 a:hover {
 }
 
 .social-link-dribbble {
-  background-image: url("svg/001-dribbble.svg");
+  background-image: url("../svg/001-dribbble.svg");
 }
 
 .social-link-pinterest {
-  background-image: url("svg/002-pinterest.svg");
+  background-image: url("../svg/002-pinterest.svg");
 }
 
 .social-link-twitter {
-  background-image: url("svg/003-tumblr.svg");
+  background-image: url("../svg/003-tumblr.svg");
 }
 
 .social-link-text {
