@@ -134,14 +134,18 @@ header::before {
   font-display: swap;
 }
 
-.article-garden {
+.trends-article {
   width: 25%;
-  height: 300px;
-  position: relative;
-  background-image: url("../images/trend1.jpg");
 }
 
-.article-garden::before {
+.garden {
+  position: relative;
+  background-image: url("../images/trend1.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.garden::before {
   content: "";
   position: absolute;
   top: 0;
@@ -183,7 +187,7 @@ header::before {
   font-display: swap;
 }
 
-.trend-name {
+.h3-trend {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
@@ -193,14 +197,14 @@ header::before {
   color: #fff;
 }
 
-.article-cheese {
-  width: 25%;
+.cheese {
   height: 300px;
   position: relative;
   background-image: url("../images/trend2.jpg");
+  background-size: cover;
 }
 
-.article-cheese::before {
+.cheese::before {
   content: "";
   position: absolute;
   top: 0;
@@ -210,14 +214,14 @@ header::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.article-mountains {
-  width: 25%;
+.mountains {
   height: 300px;
   position: relative;
   background-image: url("../images/trend3.jpg");
+  background-size: cover;
 }
 
-.article-mountains::before {
+.mountains::before {
   content: "";
   position: absolute;
   top: 0;
@@ -227,14 +231,14 @@ header::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.article-lime {
-  width: 25%;
+.lime {
   height: 300px;
   position: relative;
   background-image: url("../images/trend4.jpg");
+  background-size: cover;
 }
 
-.article-lime::before {
+.lime::before {
   content: "";
   position: absolute;
   top: 0;
@@ -612,7 +616,7 @@ h4 a:hover {
   position: absolute;
   width: 400px;
   height: 600px;
-  padding: 25px;
+  padding: 30px;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -623,8 +627,8 @@ h4 a:hover {
   position: absolute;
   color: #fff;
   font-size: 40px;
-  right: -30px;
-  top: -35px;
+  right: -3px;
+  top: -45px;
   cursor: pointer;
 }
 
@@ -635,14 +639,14 @@ h4 a:hover {
 .feedback {
   font-family: OpenSans, sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: 20px;
+  margin-bottom: 18px;
+  margin-top: 22px;
 }
 
 .feedback::after {
@@ -656,21 +660,21 @@ h4 a:hover {
 
 .text-feedback {
   font-family: OpenSans, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 16px;
+  margin-top: 26px;
 }
 
 .visits {
   display: block;
-  width: 350px;
-  height: 45px;
+  width: 330px;
+  height: 50px;
   background-color: #f4f7f6;
   font-size: 14px;
-  padding-left: 12px;
+  padding-left: 20px;
   color: #939594;
   border: none;
 
@@ -693,19 +697,25 @@ h4 a:hover {
 }
 
 .form_radio {
-  margin-bottom: 10px;
-  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-right: 26px;
   display: inline-block;
+  font-size: 18px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 .form_radio input[type="radio"] {
   display: none;
 }
+
 .form_radio label {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 25px;
+  padding-left: 40px;
   margin-right: 0;
   line-height: 18px;
   user-select: none;
@@ -713,30 +723,34 @@ h4 a:hover {
 .form_radio label:before {
   content: "";
   display: inline-block;
-  width: 17px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   left: 0;
-  bottom: 1px;
+  bottom: -51px;
   background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
-  background-size: 17px;
+  background-size: 28px;
 }
 
 /* Checked */
 .form_radio input[type="radio"]:checked + label:before {
   background-image: url("../svg/form-circle.svg");
-  background-repeat: np-repeat;
-  background-size: 17px;
+  background-repeat: no-repeat;
+  background-size: 28px;
 }
 
 .field-textarea {
-  width: 330px;
-  height: 150px;
+  width: 286px;
+  height: 86px;
   background-color: #f4f7f6;
   font-size: 14px;
-  padding-left: 15px;
-  padding-top: 15px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  padding: 22px;
   color: #939594;
 
   border: none;
@@ -747,14 +761,14 @@ h4 a:hover {
   padding: 15px 10px;
   color: #fff;
   background-color: #b59f5b;
-  width: 350px;
-  height: 48px;
+  width: 330px;
+  height: 45px;
   font-family: OpenSans, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .handmade {
@@ -806,19 +820,20 @@ h4 a:hover {
 }
 
 .handmade-info {
- display: inline-block;
-    width: 350px;
-    height: 250px;
-    box-sizing: border-box;
-    border: 2px solid #b59f5b;
-    margin-top: -25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  display: inline-block;
+  width: 350px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 2px solid #b59f5b;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
-.name-handmade {
+.h3-handmade {
   font-family: OpenSans, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -826,8 +841,8 @@ h4 a:hover {
   font-style: normal;
   font-display: swap;
   text-decoration: none;
-  padding-top: 30px;
-  padding-left: 20px;
+  padding-top: 14px;
+  margin-bottom: 0;
 }
 
 .text-hm {
@@ -859,6 +874,7 @@ h4 a:hover {
   font-display: swap;
   text-decoration: line-through;
 }
+
 .actual-price {
   font-family: OpenSans, sans-serif;
   font-size: 16px;
@@ -868,14 +884,22 @@ h4 a:hover {
 }
 
 .bottom-store {
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  text-decoration: none;
   border: none;
   width: 120px;
-  height: 48px;
+
   background-color: #b59f5b;
-  font-size: 14px;
-  padding-left: 10px;
+  padding-left: 5px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
 .footer-contaner {
@@ -934,4 +958,347 @@ h4 a:hover {
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+  .header-contaner {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  ul.menu {
+    display: none;
+  }
+
+  .menu-button {
+    width: 30px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    margin-right: 60px;
+    background-color: transparent;
+    font-size: 25px;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu-button:before {
+    top: 0;
+  }
+
+  .menu-button:before,
+  .menu-button:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu-button:after {
+    bottom: 0;
+  }
+
+  .menu-button-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  .article-trends {
+    flex-wrap: wrap;
+  }
+
+  .trends-article {
+    width: 48%;
+    margin-right: 1%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .article {
+    flex-direction: column;
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .main-page {
+    padding: 0 40px 0px 25px;
+  }
+
+  .handmade {
+    width: 100%;
+  }
+
+  .articles-handmade {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .article-hm {
+    padding: 36px;
+  }
+
+  .footer-contaner {
+    width: 100%;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-contaner {
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    position: relative;
+    padding-top: 0px;
+    width: 100%;
+
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .header-contaner .logo {
+    width: 80%;
+    margin-top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu {
+    justify-content: end;
+    display: flex;
+    width: 100%;
+  }
+
+  ul.menu {
+    display: none;
+  }
+
+  .menu-button {
+    width: 30px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    margin-right: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    font-size: 25px;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu-button:before {
+    top: 0;
+  }
+
+  .menu-button:before,
+  .menu-button:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu-button:after {
+    bottom: 0;
+  }
+
+  .menu-button-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  .header-slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 85px;
+  }
+
+  .article-trends {
+    flex-wrap: wrap;
+  }
+
+  .trends-article {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-page {
+    width: 100%;
+    padding: 0;
+  }
+
+  .article {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .article-preview {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .article-info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .article-link {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .article-list {
+    font-size: 13px;
+  }
+
+  .aside {
+    width: 90%;
+  }
+
+  .handmade {
+    width: 100%;
+  }
+
+  .articles-handmade {
+    flex-wrap: wrap;
+  }
+
+  .article-hm {
+    width: 100%;
+  }
+
+  .hm-figure {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .name-handmade {
+    font-size: 16px;
+  }
+
+  .handmade-info {
+    width: 100%;
+    height: 200px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-hm {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  .footer-contaner {
+    width: 100%;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+
+  .popup-content {
+    width: 300px;
+    height: 440px;
+    padding: 25px;
+  }
+
+  .popup-close {
+    right: 0px;
+    top: -40px;
+    font-size: 45px;
+  }
+
+  .feedback {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .visits {
+    width: 250px;
+    height: 40px;
+    font-size: 11px;
+    background-size: 10px;
+  }
+
+  .form_radio {
+    font-size: 12px;
+    margin-bottom: 6px;
+    margin-right: 20px;
+  }
+
+  .form_radio label:before {
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    bottom: -3px;
+  }
+
+  .form_radio input[type="radio"]:checked + label:before {
+    background-size: 22px;
+  }
+
+  .text-feedback {
+    font-size: 11px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  .field-textarea {
+    width: 220px;
+    height: 75px;
+    font-size: 11px;
+    padding: 15px;
+  }
+
+  .button-send {
+    width: 250px;
+    height: 35px;
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
