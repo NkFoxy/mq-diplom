@@ -619,22 +619,17 @@ h4 a:hover {
 
 .popup-content {
   background: #fff;
-  position: absolute;
   width: 400px;
-  height: 600px;
   padding: 30px;
   box-sizing: border-box;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
 }
 
 .popup-close {
-  position: absolute;
+  position: relative;
   color: #fff;
-  font-size: 40px;
-  right: -3px;
-  top: -45px;
+  font-size: 50px;
+  right: -345px;
+  top: -75px;
   cursor: pointer;
 }
 
@@ -645,20 +640,20 @@ h4 a:hover {
 .feedback {
   font-family: OpenSans, sans-serif;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 
   text-align: center;
-  margin-bottom: 18px;
-  margin-top: 22px;
+  margin-bottom: 14px;
+  margin-top: -38px;
 }
 
 .feedback::after {
   content: "";
   display: block;
-  width: 90px;
+  width: 64px;
   height: 3px;
   background-color: #e1d9bd;
   margin: 12px auto 20px;
@@ -670,14 +665,14 @@ h4 a:hover {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  margin-bottom: 16px;
-  margin-top: 26px;
+  margin-bottom: 11px;
+  margin-top: 32px;
 }
 
 .visits {
   display: block;
-  width: 330px;
-  height: 50px;
+  width: 100%;
+  height: 48px;
   background-color: #f4f7f6;
   font-size: 14px;
   padding-left: 20px;
@@ -721,34 +716,37 @@ h4 a:hover {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 40px;
+  padding-left: 28px;
   margin-right: 0;
   line-height: 18px;
   user-select: none;
 }
+
 .form_radio label:before {
   content: "";
   display: inline-block;
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   left: 0;
-  bottom: -51px;
+  bottom: 0px;
   background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
-  background-size: 28px;
+  background-size: 17px;
+  background-position: center;
 }
 
 /* Checked */
 .form_radio input[type="radio"]:checked + label:before {
   background-image: url("../svg/form-circle.svg");
   background-repeat: no-repeat;
-  background-size: 28px;
+  background-size: 17px;
+  background-position: center;
 }
 
 .field-textarea {
-  width: 286px;
-  height: 86px;
+  width: calc(100% - 44px);
+  height: 130px;
   background-color: #f4f7f6;
   font-size: 14px;
   font-family: OpenSans, sans-serif;
@@ -767,14 +765,15 @@ h4 a:hover {
   padding: 15px 10px;
   color: #fff;
   background-color: #b59f5b;
-  width: 330px;
-  height: 45px;
+  width: 100%;
+  height: 48px;
   font-family: OpenSans, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  margin-top: 16px;
+  margin-top: 28px;
+  margin-bottom: 15px;
 }
 
 .handmade {
@@ -1038,6 +1037,10 @@ h4 a:hover {
     width: 100%
   }
 
+  .aside {
+    margin-right: 20px;
+  }
+
   .article {
     flex-direction: column;
     width: auto;
@@ -1047,7 +1050,7 @@ h4 a:hover {
   .article::after {
     content: "";
     display: block;
-    width: 380px;
+    width: 100%;
     height: 2px;
     background-color: #c3c3c3;
     margin: 12px 0 20px;
@@ -1055,6 +1058,7 @@ h4 a:hover {
  
   .article-info {
     padding-left: 0;
+    width: 100%;
   }
 
   .handmade {
@@ -1109,6 +1113,7 @@ h4 a:hover {
     justify-content: end;
     display: flex;
     width: 100%;
+    margin-left: 0px;
   }
 
   ul.menu {
@@ -1174,6 +1179,10 @@ h4 a:hover {
 
   .trends-article {
     width: 100%;
+  }
+
+  .trends-info {
+    width: calc(100% - 80px);
   }
 
   .content {
@@ -1278,64 +1287,63 @@ h4 a:hover {
   }
 
   .popup-content {
-    width: 300px;
-    height: 440px;
+    width: 330px;
     padding: 25px;
   }
 
   .popup-close {
-    right: 0px;
-    top: -40px;
-    font-size: 45px;
+    right: -282px;
   }
 
   .feedback {
     font-size: 16px;
     margin: 0 auto;
+    margin-top: -40px;
   }
 
   .visits {
-    width: 250px;
-    height: 40px;
+    width: 100%;
+    height: 48px;
     font-size: 11px;
     background-size: 10px;
   }
 
   .form_radio {
     font-size: 12px;
-    margin-bottom: 6px;
-    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-right: 15px;
   }
 
-  .form_radio label:before {
-    width: 22px;
-    height: 22px;
-    background-size: 22px;
+ /* .form_radio label:before {
+    width: 18px;
+    height: 18px;
+    background-size: 17px;
     bottom: -3px;
   }
 
   .form_radio input[type="radio"]:checked + label:before {
     background-size: 22px;
   }
+*/
 
   .text-feedback {
     font-size: 11px;
-    margin-top: 14px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
 
   .field-textarea {
-    width: 220px;
-    height: 75px;
+    width: calc(100% - 30px);
+    height: 100px;
     font-size: 11px;
     padding: 15px;
   }
 
   .button-send {
-    width: 250px;
-    height: 35px;
+    width: 100%;
+    height: 48px;
     padding: 10px 10px;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 14px;
   }
 }
